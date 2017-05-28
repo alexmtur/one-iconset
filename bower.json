@@ -1,0 +1,23 @@
+{
+  "name": "one-iconset",
+  "homepage": "https://github.com/alexmtur/one-iconset",
+  "authors": [
+    "Alex Martin <alexmartinturrillas@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#latest",
+    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^2.0.0",
+    "iron-icon": "PolymerElements/iron-icon#^2.0.0"
+  },
+  "devDependencies": {}
+}
