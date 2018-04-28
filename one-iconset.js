@@ -1,4 +1,8 @@
-export const oneIconset = `<svg><defs>
+import {html, render} from 'lit-html';
+//for the approach followed there is no need for lit-html, could be done by textContent. Possible improvements could be to create an html object for each of the icons and object groups with multiple icons (for simplicity) and this could be used by lit html directly in the code.
+export const oneIconset = html`
+<svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
     <g id="settings"><path d="M98.993,43.031c-0.454-0.489-1.194-0.769-1.892-0.838l-12.764-1.258
       c-0.838-3.005-2.102-5.904-3.709-8.699l8.05-9.852c0.489-0.559,0.706-1.17,0.671-1.834c-0.035-0.664-0.302-1.24-0.791-1.729
       L80.8,11.064c-0.489-0.489-1.119-0.734-1.888-0.734c-0.629,0-1.189,0.21-1.678,0.629l-9.853,8.071
@@ -365,3 +369,13 @@ export const oneIconset = `<svg><defs>
     </g>
 </defs></svg>
 `
+let div = document.getElementById("one-iconset-div");
+if(!div) {
+  let node = document.createElement("div");
+  node.setAttribute("id", "one-iconset-div"); 
+  node.style.position = "absolute";
+  node.style.width = "0";
+  node.style.height = "0";
+  document.body.appendChild(node);  
+  render(oneIconset, node);
+}
