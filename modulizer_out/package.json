@@ -1,0 +1,18 @@
+{
+  "name": "one-elements/one-iconset",
+  "flat": true,
+  "version": "3.0.0",
+  "description": "",
+  "contributors": [
+    "Alex Martin <alexmartinturrillas@gmail.com>"
+  ],
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/alexmtur/one-iconset",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.1",
+    "@polymer/iron-iconset-svg": "^3.0.0-pre.1",
+    "@polymer/iron-icon": "^3.0.0-pre.1"
+  },
+  "devDependencies": {}
+}
